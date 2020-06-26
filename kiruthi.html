@@ -1,133 +1,20 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
-<head>
-<title>Kiruthiga's Insight</title>
-<meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
-<style>
-#example1 {
-  border: 2px solid red;
-  padding: 10px;
-  border-radius: 25px;
-}
-.glow1 {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow1 1s ease-in-out infinite alternate;
-  -moz-animation: glow1 1s ease-in-out infinite alternate;
-  animation: glow1 1s ease-in-out infinite alternate;
-}
+<body>
 
-@-webkit-keyframes glow1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-#main {
-display: flex;
-}
-.card{
-    border: 2px solid #e52e71;
-    border-radius: 8px;
-    width:auto;
-    margin-top:20px;
-    padding:7px;
-    
-}
-.btn{
-    border: 2px solid #07b39b;
-    border-radius: 15px;
-    background-color: white;
-    opacity:0.7
-}
-.btn:hover {opacity: 1}
-    
+<h3>Your Screen:</h3>
 
-</style>
-<body style="background-color:white;">
-
-<h1  id="example1" style="border:2px solid white;font-size:300%;text-align:center;color:red;font-family: cursive;text-shadow: 2px 2px 5px red;">Kiruthi's Insight</h1>
-<div id="main" style="margin-bottom:-1.0em">
-  <button onclick="myFunction(0)"><div class="venkat"  style="background-color:coral;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Authors View</div></button>
-  <button onclick="myFunction(1)"><div class="venkat"  style="background-color:lightblue;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Happy Crappy</div></button>
-  <button onclick="myFunction(2)"><div class="venkat"  style="background-color:khaki;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Connect On</div></button>
-  <button  onclick="myFunction(3)"><div class="venkat"  style="background-color:pink;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">info</div></button>
-  <button onclick="myFunction(4)"><div class="venkat"  style="background-color:lightgrey;border: 1px solid #c3c3c3;padding: 5px;font-size:10px;float:right;">Upcoming</div></button>
-</div>
-<p class="demo" style="display: none;background-color:coral;width:57%">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:lightblue;width:57%">Hi I  kirutthi</p>
-<p class="demo" style="display: none;background-color:khaki;width:57%">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:pink;width:57%">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:lightgrey;width:57%">Hi I am kirutthi</p>
-
-<div class="card">
-<p style="background-color:white;border-bottom: 1px solid blue;padding: 5px;font-size:20px;width:235px">CHOOSE YOUR CATCHY!</p>
-<button style="padding:2px"><div style="background-color:#5073b8;border: 1px solid #c3c3c3;padding: 5px;font-size:12px;width:150px;">GET OUT OF THE BOX!</div></button>
-<button style="padding:2px;margin-bottom:-1em;position:absolute;left:200px;"><div style="background-color:#6fba82;border: 1px solid #c3c3c3;padding: 5px;font-size:12px;width:100px;">LA..LA..LAND!!</div></button>
-<div class="demo" style="border-radius:10px;display: none;background-color:#5073b8;width:auto;padding:3px;">
-<ul style="list-style-type:none;">
-	<li><a href="#C4"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Maturity</button></a></li>
-    <li><a href="#C5"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Scared</button></a></li>
-    <li><a href="#C3"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Breast</button></a></li>
-    <li><a href="#C6"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Stereotype</button></a></li>
-    <li><a href="#C11"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Amidst!</button></a></li>
-    <li><a href="#C20"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Magical Yellow Rope</button></a></li>
-    <li><a href="#C21"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Be The Change</button></a></li>
-    <li><a href="#C22"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">YES, I bleed!</button></a></li>
-    <li><a href="#C23"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Happy Girl in the World of Purity</button></a></li>
-</ul>
-</div>
-
-<div class="demo" style="border-radius:8px;display: none;background-color:#6fba82;width:auto;padding:3px;">
-<ul style="list-style-type:none;">
-	<li><a href="#C2"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Caged Humans</button></a></li>
-    <li><a href="#C9"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">It can be your journey of warmth</button></a></li>
-    <li><a href="#C10"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Wisdom Room</button></a></li>
-</ul>
-</div>
-
-<p></p>
-<button style="padding:2px"><div style=" background-image: linear-gradient(to right, orange , white , green);border: 1px solid #c3c3c3;padding: 5px;font-size:20px;width:290px;">RESPECT TO MOTHER INDIA!</div></button>
-<button style="padding:2px;margin-bottom:-1em;position:absolute;left:350px;"><div style="background-color:#a166ab;border: 1px solid #c3c3c3;padding: 5px;font-size:20px;width:250px;">GIVE IT A SHOT!</div></button>
-
-<div>hi</div>
-<div>hi</div>
-<div>hi</div>
-<p>Hi</p>
-<button onclick="myFunction(0)"><div >Authors View</div></button>
-<button onclick="myFunction(1)"><div style="background-color:#f79533;border: 2px solid #c3c3c3;padding: 5px;font-size:20px;width:235px;">Happy Crappy</div></button>
-<button onclick="myFunction(2)"><div style="background-color:#1098ad;border: 1px solid #c3c3c3;padding: 5px;font-size:20px">Connect On</div></button>
-<button  onclick="myFunction(3)"><div style="background-color:#07b39b;border: 1px solid #c3c3c3;padding: 5px;font-size:20px">info</div></button>
-<button onclick="myFunction(4)"><div style="background-color:#f37055;border: 1px solid #c3c3c3;padding: 5px;font-size:20px;">Upcoming</div></button>
-</div>
+<div id="demo"></div>
 
 <script>
-function myFunction(p) {
-  var x,i,y,z;
-  
-  y = document.getElementsByClassName("venkat");
-  x = document.getElementsByClassName("demo");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  if(z == p){
-    x[z].style.display = "none";
-  }
-  else{x[p].style.display = "block";}
-  z=p;
-  for (i = 0; i < x.length; i++) {
-    y[i].style.opacity=1;
-  }
-    y[p].style.opacity=0.5;
-   
-}
+var txt = "";
+txt += "<p>Total width/height: " + screen.width + "*" + screen.height + "</p>";
+txt += "<p>Available width/height: " + screen.availWidth + "*" + screen.availHeight + "</p>";
+txt += "<p>Color depth: " + screen.colorDepth + "</p>";
+txt += "<p>Color resolution: " + screen.pixelDepth + "</p>";
+
+document.getElementById("demo").innerHTML = txt;
 </script>
 
 </body>
 </html>
-

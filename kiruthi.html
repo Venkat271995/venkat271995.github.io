@@ -29,6 +29,30 @@
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+div.c {
+
+  width: auto;
+  border-style: solid;
+  border-color: coral #1098ad #6fba82 #e52e71;
+  border-radius: 10px;
+  background-color:none;
+  padding: 5px;
+  
+ 
+} 
+#overflowTest {
+font-family:calibri;
+font-size:20px;
+background: white;
+color: #4db1bc;
+
+  padding: 5px;
+  width: auto;
+  height: 400px;
+  overflow: scroll;
+  border: 5px solid hsla(290,60%,70%,1);
+   border-radius: 6px;
+}
 #main {
 display: flex;
 }
@@ -43,7 +67,7 @@ display: flex;
 .btn{
     border: 2px solid #07b39b;
     border-radius: 15px;
-    background-color: white;
+    background-color: none;
     opacity:0.7
 }
 .btn:hover {opacity: 1}
@@ -67,15 +91,15 @@ display: flex;
 <p class="demo" style="display: none;background-color:lightgrey;width:57%">Hi I am kirutthi</p>
 
 <div class="card">
-<p style="background-color:white;border-bottom: 1px solid blue;padding: 5px;font-size:20px;width:235px">CHOOSE YOUR CATCHY!</p>
-<button style="padding:2px"><div style="background-color:#5073b8;border: 1px solid #c3c3c3;padding: 5px;font-size:14px;width:160px;">GET OUT OF THE BOX!</div></button>
-<button style="padding:2px;margin-bottom:-1em;position:absolute;left:230px;"><div style="background-color:#6fba82;border: 1px solid #c3c3c3;padding: 5px;font-size:14px;width:100px;">LA..LA..LAND!!</div></button>
+<p style="background-color:white;color:#1098ad;border-bottom: 1px solid blue;padding: 5px;font-size:20px;width:235px">CHOOSE YOUR CATCHY!</p>
+<button onclick="myFunction(5)" style="padding:2px"><div style="background-color:#5073b8;border: 1px solid #c3c3c3;padding: 5px;font-size:14px;width:160px;">GET OUT OF THE BOX!</div></button>
+<button onclick="myFunction(6)" style="padding:2px;margin-bottom:-1em;position:absolute;left:200px;"><div style="background-color:#6fba82;border: 1px solid #c3c3c3;padding: 5px;font-size:14px;width:100px;">LA..LA..LAND!!</div></button>
 <div class="demo" style="border-radius:10px;display: none;background-color:#5073b8;width:auto;padding:3px;">
 <ul style="list-style-type:none;">
-	<li><a href="#C4"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Maturity</button></a></li>
+	<li><a href="#C1"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Maturity</button></a></li>
     <li><a href="#C5"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Scared</button></a></li>
     <li><a href="#C3"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Breast</button></a></li>
-    <li><a href="#C6"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Stereotype</button></a></li>
+    <li><a href="#C6"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Stereotype</button></a></li>
     <li><a href="#C11"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Amidst!</button></a></li>
     <li><a href="#C20"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Magical Yellow Rope</button></a></li>
     <li><a href="#C21"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Be The Change</button></a></li>
@@ -86,6 +110,7 @@ display: flex;
 
 <div class="demo" style="border-radius:8px;display: none;background-color:#6fba82;width:auto;padding:3px;">
 <ul style="list-style-type:none;">
+	<li><a href="#C2"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">A passionate visit to the mighty jungle</button></a></li>
 	<li><a href="#C2"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Caged Humans</button></a></li>
     <li><a href="#C9"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">It can be your journey of warmth</button></a></li>
     <li><a href="#C10"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Wisdom Room</button></a></li>
@@ -93,19 +118,56 @@ display: flex;
 </div>
 
 <p></p>
-<button style="padding:2px;position:relative;left:2%"><div style=" background-image: linear-gradient(to right, orange , white , green);border: 1px solid #c3c3c3;padding: 5px;font-size:100%;">RESPECT TO MOTHER INDIA!</div></button>
-<button style="padding:2px;margin-bottom:-1em;position:absolute;left:55%;"><div style="background-color:#a166ab;border: 1px solid #c3c3c3;padding: 5px;font-size:100%;;">GIVE IT A SHOT!</div></button>
+<button onclick="myFunction(7)" style="padding:2px;"><div style=" background-image: linear-gradient(to right, orange , white , green);border: 1px solid #c3c3c3;padding: 5px;font-size:100%;width:160px">RESPECT TO MOTHER INDIA!</div></button>
+<button onclick="myFunction(8)" style="padding:2px;position:absolute;left:200px;align:centre"><div style="background-color:#a166ab;border: 1px solid #c3c3c3;padding: 5px;font-size:100%;;">GIVE IT A SHOT!</div></button>
 
-<div>hi</div>
-<div>hi</div>
-<div>hi</div>
-<p>Hi</p>
-<button onclick="myFunction(0)"><div >Authors View</div></button>
-<button onclick="myFunction(1)"><div style="background-color:#f79533;border: 2px solid #c3c3c3;padding: 5px;font-size:20px;width:235px;">Happy Crappy</div></button>
-<button onclick="myFunction(2)"><div style="background-color:#1098ad;border: 1px solid #c3c3c3;padding: 5px;font-size:20px">Connect On</div></button>
-<button  onclick="myFunction(3)"><div style="background-color:#07b39b;border: 1px solid #c3c3c3;padding: 5px;font-size:20px">info</div></button>
-<button onclick="myFunction(4)"><div style="background-color:#f37055;border: 1px solid #c3c3c3;padding: 5px;font-size:20px;">Upcoming</div></button>
+<div class="demo" style="border-radius:10px;display: none;background-image:linear-gradient(to right, orange , white , green);width:auto;padding:3px;">
+<ul style="list-style-type:none;">
+	<li><a href="#C7"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Crown of Nation - ISRO on Chandrayan 2</button></a></li>
+    <li><a href="#C8"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">A Day to Remember - September 7,2019  </button></a></li>
+    <li><a href="#C1"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">.....Mother India.....</button></a></li>
+</ul>
 </div>
+
+<div class="demo" style="border-radius:10px;display: none;background-color:#a166ab;width:auto;padding:3px;">
+<ul style="list-style-type:none;">
+<li><a href="#C1"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Virtual Habits in Lockdown-Pandemic teaches</button></a></li>
+</ul>
+</div>
+</div>
+
+<h4 style="margin-bottom:0.2em;color:#5073b8;">GET OUT OF THE BOX!</h4>
+<div class="c gradient-border">
+<h3 id="C1" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>The so called Maturity!</b></h3>
+<div id="overflowTest">
+<p id="C1" style="text-align:center"> <b>THE MATURITY!</b></p>
+<p>Hey Hi.</p>
+<p>My company is mandatory for you. Still I don't have a specific definition. But I have a name..</p>
+<p>I am called - ' Maturity ' !!</p>
+<p>I don't come as a package only with Age, as you people always think, which makes me think you immature !</p>
+<p>Instead, I come with the exposure you get, the experience you get along with your age ! </p>
+<p>And I am clear.. Age alone has nothing to do with Me(Maturity) I! </p>
+<p>Hey I can give the symptoms of you being or becoming matured .. </p>
+<p>When I am with you.. </p>
+<p>You will prefer silence over unwanted arguments.. </p>
+<p>You will start seeing things in various perspectives.. </p>
+<p>You will start liking Kamal Hassan movies.. </p>
+<p>You will take a decision right analysing the situation.. </p>
+<p>You will cry but will make sure others don't get affected by it.. </p>
+<p>You will laugh and make sure others laugh too.. </p>
+<p>You will love to have your own self pampering time once in a while.. </p>
+<p>You will definitely have extreme fun but knowing your limits.. </p>
+<p>You will know even liberty is restricted.. </p>
+<p>You will live your life giving no space for others to doubt it.. </p>
+<p>You will be You !! </p>
+<p>I swear .. you will enjoy everything around you if you have me !! </p>
+<p>I may sound a little self boasting .. which I am not.. but that's okay .. </p>
+<p>Because .. I knew I am clear in my points and I ignore the negativity put on me.. just like you having me ! </p>
+<p>And that's how I also call me as a - Swagger</p>
+<p style="text-align:right">Yours Firmly, </p>
+<p style="text-align:right">Maturity!!! </p>
+</div>
+</div>  
 
 <script>
 function myFunction(p) {

@@ -1,11 +1,14 @@
 
 
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
 <head>
 <title>Kiruthiga's Insight</title>
 <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 #example1 {
   border: 2px solid red;
@@ -72,7 +75,62 @@ display: flex;
     opacity:0.7
 }
 .btn:hover {opacity: 1}
-    
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+ 
+  
+  text-shadow: 0 0 0 #F40A35;
+}
+
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+  animation: neon 2s ease infinite;
+  -moz-animation: neon 2s ease infinite;
+  -webkit-animation: neon 2s ease infinite;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 0 #FA1C16, 0 0 0 #FA1C16, 0 0 0 #FA1C16, 0 0 0 #FA1C16, 0 0 0 #FED128, 0 0 0 #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 0 #800E0B, 0 0 0 #800E0B, 0 0 0 #800E0B, 0 0 0 #800E0B, 0 0 0 #800E0B, 0 0 0 #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 0 #1041FF, 0 0 0 #1041FF, 0 0 0 #1041FF, 0 0 0 #1041FF, 0 0 0 #8BFDFE, 0 0 0 #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 0 #082180, 0 0 0 #082180, 0 0 0 #082180, 0 0 0 #082180, 0 0 0 #082180, 0 0 0 #0A3940;
+    color: #146C80;
+  }
+}
+
+.x{
+position: absolute;
+background-color: #262626;
+}
 
 </style>
 <body style="background-color:white;">
@@ -98,23 +156,23 @@ display: flex;
 <div class="demo" style="border-radius:10px;display: none;background-color:#5073b8;width:auto;padding:3px;">
 <ul style="list-style-type:none;">
 	<li><a href="#C1"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Maturity</button></a></li>
-    <li><a href="#C5"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Scared</button></a></li>
+    <li><a href="#C2"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Scared</button></a></li>
     <li><a href="#C3"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Breast</button></a></li>
-    <li><a href="#C6"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Stereotype</button></a></li>
-    <li><a href="#C11"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Amidst!</button></a></li>
-    <li><a href="#C20"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Magical Yellow Rope</button></a></li>
-    <li><a href="#C21"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Be The Change</button></a></li>
-    <li><a href="#C22"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">YES, I bleed!</button></a></li>
-    <li><a href="#C23"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Happy Girl in the World of Purity</button></a></li>
+    <li><a href="#C4"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Stereotype</button></a></li>
+    <li><a href="#C5"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Amidst!</button></a></li>
+    <li><a href="#C6"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Magical Yellow Rope</button></a></li>
+    <li><a href="#C7"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Be The Change</button></a></li>
+    <li><a href="#C8"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">YES, I bleed!</button></a></li>
+    <li><a href="#C9"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Happy Girl in the World of Purity</button></a></li>
 </ul>
 </div>
 
 <div class="demo" style="border-radius:8px;display: none;background-color:#6fba82;width:auto;padding:3px;">
 <ul style="list-style-type:none;">
-	<li><a href="#C2"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">A passionate visit to the mighty jungle</button></a></li>
-	<li><a href="#C2"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Caged Humans</button></a></li>
-    <li><a href="#C9"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">It can be your journey of warmth</button></a></li>
-    <li><a href="#C10"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Wisdom Room</button></a></li>
+	<li><a href="#C10"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">A passionate visit to the mighty jungle</button></a></li>
+	<li><a href="#C11"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Caged Humans</button></a></li>
+    <li><a href="#C12"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">It can be your journey of warmth</button></a></li>
+    <li><a href="#C13"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Wisdom Room</button></a></li>
 </ul>
 </div>
 
@@ -124,21 +182,21 @@ display: flex;
 
 <div class="demo" style="border-radius:10px;display: none;background-image:linear-gradient(to right, orange , white , green);width:auto;padding:3px;">
 <ul style="list-style-type:none;">
-	<li><a href="#C7"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Crown of Nation - ISRO on Chandrayan 2</button></a></li>
-    <li><a href="#C8"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">A Day to Remember - September 7,2019  </button></a></li>
-    <li><a href="#C1"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">.....Mother India.....</button></a></li>
+	<li><a href="#C14"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">The Crown of Nation - ISRO on Chandrayan 2</button></a></li>
+    <li><a href="#C15"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">A Day to Remember - September 7,2019  </button></a></li>
+    <li><a href="#C16"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">.....Mother India.....</button></a></li>
 </ul>
 </div>
 
 <div class="demo" style="border-radius:10px;display: none;background-color:#a166ab;width:auto;padding:3px;">
 <ul style="list-style-type:none;">
-<li><a href="#C1"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Virtual Habits in Lockdown-Pandemic teaches</button></a></li>
+<li><a href="#C17"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Virtual Habits in Lockdown-Pandemic teaches</button></a></li>
 </ul>
 </div>
 </div>
 
 <h4 style="margin-bottom:0.2em;color:#5073b8;">GET OUT OF THE BOX!</h4>
-<div class="c gradient-border">
+<div class="c">
 <h3 id="C1" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>The so called Maturity!</b></h3>
 <div id="overflowTest">
 <p id="C1" style="text-align:center"> <b>THE MATURITY!</b></p>
@@ -167,8 +225,448 @@ display: flex;
 <p>And that's how I also call me as a - Swagger</p>
 <p style="text-align:right">Yours Firmly, </p>
 <p style="text-align:right">Maturity!!! </p>
+</div> 
+<p></p>
+<h2 style="color:coral;" id="C2"><b> Scared - "Yes, I am!"  </b></h2>
+<div id="overflowTest">
+<p id="C2" style="text-align:center"> <b>SCARED</b></p>
+<p><b>Hi You..</b></p>
+<p>I am scared!</p>
+<p>Yes, I am scared.</p>
+<p>Scared of what..</p>
+<p>Scared of bounded script kept ready for each and every individual about the stages of life..</p>
+<p>Scared even more when they think that stepping out of norms is a sin.. SERIOUSLY</p>
+<p>Scared when they didnt teach me age is just a number..</p>
+ <p>Scared even more when they have sucking age limit for evry damn thing to happen. cALM DOWN!</p>
+ <p>Scared when they literally preach me that human-made statue of God will bestow you goodnes if worshipped kept in vry nook and corneer of road </p>
+<p>Scared even more when they dont teach me its not the statue but its the human who made it,is The Real Power of Our Environment.HOLY! <p>
+<p>Scared why sex education is still a taboon topic..</p>
+<p>Scared even more when they dont realise that it is going to save pretty number of children from shifty harassment and sexual abuse</p>
+<p>Scared to deep,When children dont even realise, its 'the rape scene' in their life at that moment,just because they dont know what is that shit 'called' sensing something harm. BETRAYAL!</p>
+<p>Scared of the stupid superstitions still going rounds..</p>
+<p>Scared even more by witnessing the people who are proving it by lame reasons.EVIL</p>
+<p>Scared hearing the phrase'yay time for marriage'..</p>
+<p>Scared even more when the phrase is not said bt concerned individual.WHOA</p>
+<p>Scared of the added bonus to the above phrase now..'aah you planning for baby right'.'when is the mini you coming out',blah blah'..</p>
+<p>Scared even more when they believe that the main agenda of marriage is thye baby making process and not the other priorities of couple themselves.UNBELEIVABLE.</p>
+<p>Scared of so many thoughts gushing into me right now which makes me scared of how many shit I am scared off just to live in this really SCARY SOCIETY.</b></p>
+<p>HEY YOU.. SOCIETY.</p>
+<p>YES I AM SCARED OF YOU!!</p>
+<p>Why cant you be just lenient on us </p>
+<p>why cant you let is live our lives with no pressure..</p>
+<p>You suffocate us dood..</p>
+<p>Can you please let us breath.. </p>
+<p>Our own O2 is all we wanted. </p>
+<p>We know to let out our CO2,you dont worry 'so called bosssy boss' </p>
+<p style="text-align:right"><b>YOURS RUDELY</b></p>
+<p style="text-align:right"><b>A HAPPY BREAKER OF YOUR SCARY NORMS</b></p>
 </div>
-</div>  
+<p></p>
+<h2 id="C3" style="color:coral;"><b> The Breast - Hey Gazers!! </b></h2>
+<div id="overflowTest">
+
+<p id="C3" style="text-align:center"> <b>THE BREAST!</b></p>
+<p><b>What If The Breast Speaks…</b></p>
+<p>Hi all my gazers…</p>
+<p>Know something.. I am just extra piece of flesh destined for the time of my motherhood!</p>
+<p>Thats all about me!I swear you folks!!Nothing more!!!Nothing!!!</p>
+<p>But…</p>
+<p>But..I feel certain stuffs because of the angle of perspectives of my own gender and the others on me!</p>
+<p>I feel like I am misinterpreted to be weapon for your pleasure.</p>
+ <p>I feel like you have been misleaded in your thought processing.</p>
+ <p>I feel like your minds have some inculcated stuffs about me already,like an automated program in a machine</p>
+<p>I feel like I am overrated everytime except the time when I am pumping out the production of mine to the little infant of my handler. <p>
+<p>I fell like I dont deserve all this attention when my clothes make me obvious.</p>
+<p>I feel like to yell-'I am not on display!, when I am on streets and the eyes of atleast half the passersby be like..'Hey you..you really got some!'</p>
+<p>I feel like telling them-'can you please let me alone?',because I knew I have got some and thats why I am called The Breasts.</p>
+<p>I feel like suffocating not because of my wrapper-the brassiere,but because of the eroneous gazes I am victimized to.</p>
+<p>I feel like I am the most protected in any kind because of all the two..three layers of shield I get to cover on me.</p>
+<p>I feel like  I am tired of every drama created around me or based on me.</p>
+<p>And</p>
+<p>I feel like I am gender biased as I dont make my presence on one gender..which makes me grind the million dollar question in me always like - 'Will I have not been the victim of anything mentioned above,if I was not really a gender biased kind(meaning present in all the gender)?!?!!?!!!</p>
+<p>Would I have escaped all these?!?!?!</p>
+<p style="text-align:right"><b>BY THE VICTIM MYSELF - THE BREAST!</b></p>
+</div>
+<h3  id="C4" style="color:coral;"><b>The STEREOTYPES!- Girl of Attitude(EGO)!</b></h3>
+<div id="overflowTest">
+<p id="C4" style="text-align:center">THE STEREOTYPES!</b></p>
+<p>Am I girl of Attitude, just because I do what I like..</p>
+<p>Am I a girl of less a character, just because I treat my both gender friends equally..</p>
+<p>Am I a girl with no morale, just because I intend to be an atheist..</p>
+<p>Am I a girl with no shy, just because I talk about my periods..</p>
+<p>Am I a girl with no discipline, just because I question something which is irrational..</p>
+<p>Am I girl with no lifegoal, just because I build my own castle of goals..</p>
+<p>Am to girl with no skills, just because I hate doing household chores..</p>
+<p>Am I girl fit for nothing, just because l am not into cooking..</p>
+<p>Am I girl with no responsibility, just because I wanted to get married at my 30..</p>
+<p>Am I girl with no motherhood, just because I voluntarily opt for an adoption..</p>
+<p>Am I even a 01, IF I HATE MARRIAGE !!</p>
+<p>HOLY CRAP WITH THE STEREOTYPES !!</p>
+<p>Staying out of the crowd doesn't make me weird!</p>
+<p>Being Different doesn't make Wrong !!</p>
+<p>I Am Just Being Me Living My Life !!!</p>
+<p style="text-align:right">Yours rudely, </p>
+<p style="text-align:right">A Girl Of Ego.</p>
+</div>
+<h2 style="color:coral;" id="C5"><b>Amidst! - PerspectiveMatters</b></h2>
+<div id="overflowTest">
+<p id="C5" style="text-align:center;font-family:lucida handwriting"> <b>Amidst</b></p>
+<p style="font-family:lucida handwriting">Light amidst dark </p>
+<p style="font-family:lucida handwriting">Possible amidst impossible</p>
+<p style="font-family:lucida handwriting">Love amidst hatred</p>
+<p style="font-family:lucida handwriting">Vibrant amidst sombre</p>
+<p style="font-family:lucida handwriting">Live amidst Exitense</p>
+<p style="font-family:lucida handwriting">Happy life amidst Chaos! </p>
+<p style="text-align:right;font-family:lucida handwriting;text-shadow: 5px 5px 5px white">#PerspectiveMatters</p>
+</div>
+<h2  id="C6" style="color:coral;"><b>The Magical Yellow Rope - Is it needed?</b></h2>
+<div id="overflowTest">
+
+<p id="C6" style="text-align:center"><b>The Magical Yellow Rope</b></p>
+<p>The Magical Rope !!</p>
+<p>- The most powerful thing that could ever exist ! This lil thing
+can give you immense powers
+can transform you into anything
+can make you an object of society
+can give you roles and responsibilities
+can give you anything you don't wanted can do lot more stuffs.. </p>
+<p>But the thing is it can give you all as prescribed in its rules book and not anything beyond it !! Believe me it must be one of the deadliest Book ! Book of what .. </p>
+<p>The Magical Yellow Rope - The License of our Society !! </p>
+<p>It has the potential to change the way society sees you and the way you have to behave thereafter .. the moment you get it ! </p>
+<p>That's an overnight transformation indeed !! 
+The Rope and it's transformations ! </p>
+<p>THEN you are naughty lil young gal NOW you are a matured grown up lady who should definitely even forget about the word naughty ! </p>
+<p>THEN you cannot go anywhere alone out NOW you are licensed that you can go out alone ifff..if you are allowed to ! </p>
+<p>THEN seeing boys is a crime NOW just see one to get the license of rope ! </p>
+<p>THEN you can't decide on anything NOW manage the household Lady ! </p>
+<p>THEN even talking about sex is a sin NOW just do it even if you don't want to ! </p>
+<p>THEN you hate cooking NOW whatever you should be the master of Chefs ! </p>
+<p>THEN your opinions might been mattered atleast insome point NOW you are supposed to follow just the instructions given to you !</p>
+<p>THEN you were you NOW you are a societal product !!<p>
+<p style="text-indent: 50px;">HENCE PROVED!</p>
+<p>The spectacular spellbound factors of the tragedic magical one of a kind Yellow Rope !!</p> 
+<p style="text-align:right;font-family:lucida handwriting;">Kiruthi!</p>
+</div>
+<h2 style="color:coral;" id="C7"><b>Be The Change - Dont Always Wish</b></h2>
+<div id="overflowTest">
+<p id="C7" style="text-align:center;font-family:satisfy"> <b>Be The Change</b></p>
+<p style="font-family:satisfy">Dont always wish for a change </p>
+<p style="font-family:satisfy">Instead be the change</p>
+<p style="font-family:satisfy">Dont always wish for a revolution to happen</p>
+<p style="font-family:satisfy">Instead be the revolution</p>
+<p style="font-family:satisfy">Dont always seek for pleasure</p>
+<p style="font-family:satisfy">Instead be the source of pleasure</p>
+<p style="font-family:satisfy">Dont always ask for happiness </p>
+<p style="font-family:satisfy">Instead be the happiness</p>
+<p style="font-family:satisfy">Dont always seek for peace</p>
+<p style="font-family:satisfy">Instead seek your inner peace</p>
+<p style="font-family:satisfy">Dont always mutter over things</p>
+<p style="font-family:satisfy">Instead be the breaker of norms</p>
+<p style="font-family:satisfy">Dont always follow the footprints of the society</p>
+<p style="font-family:satisfy">Instead be your own path decider</p>
+<p style="font-family:satisfy">Dont always put pressure on destiny</p>
+<p style="font-family:satisfy">Instead be the destiny maker</p>
+<p style="font-family:satisfy">Dont always worry about people's thought on you </p>
+<p style="font-family:satisfy">Instead be a person who live's life fully</p>
+<p style="font-family:satisfy">Dont always go with your mind</p>
+<p style="font-family:satisfy">Instead be the heart listener</p>
+<p style="font-family:satisfy">Dont always wish for a change </p>
+<p style="font-family:satisfy">Instead be the change</p>
+<p style="text-align:right;font-family:satisfy;">Kiruthiga Shanmugam</p>
+</div>
+<h2  id="C8" style="color:coral;"><b>Yes, I bleed! - Not a Taboo?</b></h2>
+<div id="overflowTest">
+<p id="C8" style="text-align:center"><b>Yes, I bleed!</b></p>
+<p>I BLEED !</p> <p> </p>
+<p>Yes, I Bleed !!</p><p>Just because I Bleed, it doesn't make me Impure ! </p><p>Just because I Bleed, it's not that I am physically weak !</p><p>Just because I Bleed, I don't deserve any sympathy !</p><p>Just because I Bleed, I can't be isolated from Holy places !</p><p>Just because I Bleed, people can't get awkward talking about it !</p><p>Just because I Bleed, Should I keep this Divinity bestowed on me as a secret ??!?????!!</p><p></p>
+<p>Why should I ??</p><p></p>
+<p>YES, I BLEED !!</p><p></p>
+<p>I Bleed because it makes me Pure !</p><p>I Bleed because it makes me Even Stronger !</p><p>I Bleed because I am endowed with Responsibility !</p><p>I Bleed because I keep the Human Race away from Extinction !</p><p>I Bleed because I am An Extremely Gifted  - ' A Female version of The Human ' !!</p><p></p>  
+<p style="text-align:right;">BY A PROUD BLEEDING WOMEN !</p>
+</div>
+<h2 id="c9" style="color:coral;"><b>Happy Girl in The World of Purity</b></h2>
+<div id="overflowTest">
+
+<p id="C9" style="text-align:center;font-family:satisfy"> <b>Happy Girl in The World of Purity</b></p>
+<p> A HAPPY GIRL!!</p>
+<p>A Happy Girl in The World of Purity!!</p>
+<p>The ‘Happy' verb sitting next to the noun ‘Girl ‘… makes me happy happy and makes me wonder what kind of ‘Happy Girl’ she should have been to be happy in The World of Purity…</p>
+<p>A kind of happy with no regrets…</p>
+<p>A kind of happy from the bottom of the heart...</p>
+<p>A kind of happy with no pinch of fear struck somewhere in the corner of the room...</p>
+<p>A kind of happy which doesn’t know its counterpart Sadness…</p>
+<p>A kind of happy with the mouthful of smile adoring her always to carry herself gracefully…</p>
+<p>A kind of happy which glows in her face…</p>
+<p>A kind of happy with only selflessness…</p>
+<p>A kind of happy with no hate at all…</p>
+<p>A kind of happy with full of love all over…</p>
+<p>A kind of happy like she is sensing the warmth of the sea and its waves when gazing its majesty…</p>
+<p>A kind of happy like her face is feeling the breezy chill winds when sitting in the window seat while travelling along the side of the shore…</p>
+<p>A kind of happy like tearing the breeze while riding the bike in an amazing road welcomed by greens on the side…</p>
+<p>A kind of happy when drizzle hits us at the instant of thinking about rain…</p>
+<p>A kind of happy when seeing the most favourite food nah nah...when just smelling the favourite food…</p>
+<p>A kind of happy with no anger hidden anywhere for anybody or anything…</p>
+<p>A kind of happy which only knows ‘How to be HAPPY’ and nothing else... nothing else…!!</p>
+<p>Just like a kind of A Happy Girl in The World of Purity!!!</p>
+<p>In the World of Purity!!</p>
+<p>Purity!</p>
+<p style="text-align:right;">By A Happy Girl of Purity!</p>
+</div>
+</div>
+
+<h4 style="margin-bottom:0.2em;color:#6fba82;">LA..LA..LAND!!</h4>
+<div class="c" style="border-color:brown;">
+<h2 id="C10" style="color:#000080;"><b>A passionate visit to the mighty jungle</b></h2>
+<div id="overflowTest" style="color:#006400;border-color:brown #006400">
+<p id="C10" style="text-align:center;font-family:satisfy"> <b>A Hypothetical Day</b></p>
+A HYPOTHETICAL DAY!
+<p>I badly wanted to meet our brothers and sisters of our very own Animal Kingdom. So I addressed my request to The Kingdom, which to my surprise was accepted widely by everybody and assent was given by The King for my visit!That was not just a visit for me, instead was the happening dream of mine.</p>
+<p>INTO THE WOODS ….!</p>
+<p>Early in the morning, as the sun rises, I arrived sharp in the entrance of The Jungle. </p>
+<p>Within seconds of my excited arrival, there came a group of 3 members towards me – A handsome horse accompanied by 2 deer pals. We had a very warm and happy greetings towards each other. They would have known from my expression of how excited I was .. I AM!</p>
+<p>The horse gave me a ride on his back and we 4 were now galloping into the jungle. We are heading deep into their place and there came a stop.</p> 
+<p>The Most Respected Cave Of The Jungle – THE KING’S CAVE!</p>
+<p>As we arrived the cave, The King and his family was all ready to welcome us…ME! We went inside the cave, I was offered a stone to take my seat and The Lion sat in his royal posture in front of me and introduced me to his wife and children. Actually he had held up his wife from going for an hunt, just to greet me. I was so pleased when I came to know about it as she served me water and informed me that she was leaving for hunting.</p>
+<p>The King was just smiling looking at us and waved a royal good luck for her hunt. I spent some time talking with The King about how excited I am and what all I am gonna experience TODAY. He was describing me about his very own Jungle and all the members of it with utmost care and love. I played with his cubs for a few minutes and was all ready for THE ADVENTUROUS DAY!!</p>
+<p>The King instructed the companions of mine for the day officially(The Horse and The Deers) to gift me a satisfied trip. And The Kin got an excuse from me, as he was not able to accompany me (which total is not wanted and showed how humble he is) as he has some important meeting.</p>
+<p>We are all ready for the big day ahead now!</p>
+<p>The Horse(Him) being so witty and left no chance to mock the deers and also deers, no less than the horse was super fast to give a counter dialogue and.. between them you can imagine me how enjoying I would have been. We were walking for sometime and galloping for sometime. We now started to walk walk walk.. </p>
+<p>The  images I am seeing now is so unreal. An I into any other world or in m dream. All I could see is only the greens everywhere around me, below me, above me, surrounded totally with the vibrant colour flowers and  buds and small moving sober and bright coloured figures of  insects and honey bee sucking the nectar and the flying colors around me (The chirping birds) and the patches of blue color (The sky in between the dominant canopies).</p>
+<p>I was lost in the green and the colors literally! Till then, I was laughing and chatting with my companions and now I was just mum.. I hope they understood my silence of aw!!</p>
+<p>Two Zebras trespassing saw their doods (My companions) and came to us. Only then, they saw me as I was hidden behind the Horse for them to see me from the long sight. </p>
+<p>Zebras.. SO PURE!</p>
+<p>Those stripes have always been a wonder for me. And I always had a childish wish that one day I wanted to count the stripes on him. As the Deers gave me an intro to the Zebras(as they are just coming to their Jungle after a holiday, they were not aware of my arrival). In between the talks among us, I revealed the wish of mine and so easily it was fulfilled. Let the secret number of black and white stripes and also both of it together better stay with me alone!  The Zebras departed from us, assuring that they would go their place, refresh and join us in a while. And we started to move..</p>
+<p>JUMP.. A Flock Of Monkeys surrounded us in a second and all of them was very curious to greet and talk to me and so was I !</p>
+<p>One among them gave me a banana to eat, and as I was to receive it another Monkey plucked it from her friend and she peeled the banana and then gave it to me. How Sweet? *Both the banana and The Monkeys* </p>
+<p>From now now, the Monkeys were running and jumping and accompanying us. Some quarrel on the top of our heads lol. As we looked up, that’s a quarrel between a Monkey and a Woodpecker. The same blue and brown beauty WoodPecker!</p> 
+<p>Seeing me from above, they stopped the quarrel and gave an uneasy smile thinking that they are embarrassing me but actually I was enjoying the cute lil tussle between them both. Seeing the Woodpecker, my next wish unrolled from my list which I murmured into the ear of one of the Deer(He was only correct to my height). The Deer told the other two(Horse and the other Deer) and hearing this the Horse now looked at me with a mocking smile but with love.</p>
+<p>Now, I was in no idea of what is happening. The Horse calling a flying white bird above us and told something  in his ear and the Bird was all happy to do the work given to him and flew away. Here, we were having a good time mocking at the quarrel between them both.</p>
+<p>Within a few minutes, the Bird came sitting at the back of a Chimpanzee(Our Cousin). That was a cool visual gift of the classic black and white combo! The Chimpanzee was happy to make her presence and happily greeted me. She is one kind of a star in the Jungle and among the group. Everybody got excited seeing her coming and was started screaming in excitement. </p>
+<p>The Chimpanzee came straight to me putting a halt to her busy schedule, told me to get onto her back. Me, the very next second was behind her back, holding her tightly (because this was my wish with The Chimpanzee which is happening in the go without even me demanding for it!). I am now climbing the tree .. jumping between the trees .. hanging on the branches before making a stop near the Woodpecker.</p>
+<p>Woodpecker was excited a s he guessed that I am going to ask something and yes I am! I asked him to continue its pecking as I wanted to see it close and when it is comfortable enough that I just wanted to leave my fingers into the teeny tiny hole. He laughed hard hearing my wish and let my fingers to witness it in sometime. Now, I was again excited to come down to the ground swinging and swirling in the trees behind the Chimpanzee, this time with an add on – The Woodpecker sat behind my back in the way down!</p> 
+<p>Our group gets bigger and bigger. Each and every member we meet happily starts accompanying us.. ME!! Even the Zebras joined us now after refreshing. The scene around me at this moment – The Horse, Zebras, Deers, Chimpanzee mocking and complaining about each other funnily to me, by making me feel like a judge and the Monkeys with no care about the conversation by us are just tangling between trees which was like seeing a dance without music and above and beside me was vibrant birds flying all around .. !</p>
+<p>In the midst of the greens, a prolonged neck turned towards us and called us there – The Giraffe!</p>
+<p>As she saw me, even before greeting me, she plucked a fruit, to welcome me by giving the fruit. According to the ritual, here comes my wish again. This time .. it was I wanted to slide in the prolonged neck of the Giraffe. As I was hesitant to approach first, the Horse sensing my thoughts, told the Giraffe that I had wish even me without conveying anything. I had a laugh within me and told my blunt wish to the Giraffe and I was sliding in her neck in no second!</p> 
+<p>As the Giraffe left me down in the ground, a Fox paid a visit. He greeted me and was in a hurry for he was heading to a meeting with The King. </p>
+<p>We were walking, lost in the laughter and suddenly something quickly crossed my legs and ran. The  Rabbits! They had no time to stop but they made a quick revisit again with carrots in hand. They first gave the carrots to everyone and then started talking. Impressed me but not the group of them of their sharing habit as it was very usual for them.</p>
+<p>In the mid of our way, there was a sudden stop in front of me by someone – The Rhino!</p>
+<p>I was quite scared and just smiled at him with no eagerness to ask, though I had something in my list. They were so sweet enough of making me feel comfortable with the Rhino, without even embarrassing me. I finally conveyed my lunatic wish to The Rhino. In no time, I was holding tight with both my bands his one horn and was swirling and flying around, as he was making a fast round standing in a place. That was one heck of an act dammit! I felt so adventurous. Thanks to the Rhino and sorry for the starting trouble of me.</p>
+<p>And then I had a fast run sitting at the back of The Leopard. Butterflies sitting in my hands making me colorful and An Elephant lifting me with his trump and splashing me with water as were now near the river and many more .. !</p>
+<p>As The Sun was about to set, we got a call from The King to head back to His place via a Bird. I met almost everybody here and was in the midst of them, but still I was hoping for a special appearance right from the start of the day .. and now comes The Moment ..</p>
+<p>A walk of Him when the sun is setting at the backdrop in the bluish orange sky amidst the two green hills – The Tiger!</p>
+<p>He was coming after a meeting with The King. He came straight to me and welcomed me first .. I just said ‘Majestic!’. He smirked and asked me that ‘I heard, you were asking a wish from everybody itseems from morning. What do have to ask me?’ For which I said .. My only wish is to see you Majestic Walk! Nothing else!!  And I can the feel the hidden pride in Him!</p>
+<p>We reached The Kings place. It was all dark, everybody was present there. Even the ones who left after the meeting joined us in no time. We all had a grand dinner together. Talking, laughing, mocking, dancing, then when tired, we all slept together. Where I took my place was on the top of a Bear on a tree! That was one gifted sleep indeed!</p>
+<p>A deadly silence out there in the woods as fell asleep!</p>
+<p>The next day, I was scared to wake up as my 24 hours appointment is getting over. Still, I woke up, we all had long faces waved sad good byes with a promise of me coming again to visit them, as The King has given me permission to visit The Jungle anytime!!</p>
+<p>The Horse and the Deers took me back to the place where they picked up me. We waved a hard goodbye and they left into their place of peace, truth, passion, love and nature and I came back to The Human Existing World!!!!</p>
+<p style="text-align:right;">Kiruthiga Shanmugam</p>
+<p style="text-align:right;">Be You!</p>
+</div>
+<h2 id="C11" style="color:#000080;"><b>Caged Humans</b></h2>
+<div id="overflowTest" style="color:#006400;border-color:#006400 brown">
+<p id="C11" style="text-align:center"><b>Caged Humans</b></p>
+<p>Words were spreading in The Woods about The Caged Humans. And all the species got curious to know ‘Why?’ and ‘How?. They desperately wanted to go visit them. Steps were taken from their side regarding this. Request to visit The Caged Humans was submitted to Highness.</i></p>
+<p>Orders were issued to all the brothers and sisters of Animal Kingdom, giving permission for their visit to The Caged Humans!</p>
+<p>The Day of the visit!</p>
+<p>All species of animals came in flocks and groups and even in single to visit them in cages.</p>
+<p><b>THE ANIMALS WERE PASSING THE CAGES SEEING HUMANS IN AMUSEMENT WITH SO MANY EXCITING AND CURIOUS QUESTIONS AND WEIRD THOUGHTS RUNNING THROUGH THEM AND ……………………</b></p>
+<p>The Elephants was wondering and murmuring among them, ‘Look, how tiny these Humans are? Aah… They could drink water with their hands...!’ and they lost into the sight of the Humans drinking water!</p>
+<p>The Zebras, the moment they saw the Humans, was like, ‘What a dull creature they should be, with no crosses or nothing!’ and felt pity for each humans with sober single color! </p>
+<p>The Chimpanzee bro, kept watching intensely the Humans activities, decoding how these humans look-alike them to a certain extent, meanwhile, a baby Chimp wanted to throw a banana from her hand just to witness how the human would peel and eat it… Curiosity! Of course, they enjoyed the play! </p>
+<p>The Flock of Monkeys went beyond their excitement jumping and flinging by just seeing the humans in cages! </p>
+<p>The Peacock and Peahen were in the middle of a hot debate, distinguishing the gender of the humans, getting confused between male and female! Peacock went like, ‘Honey, can we just put our debate aside, and enjoy our visit!’ and enjoyed watching as they can’t distinguish as every Human were wearing colorful cloths! </p>
+<p>A group of four Deer’s made their hopping entry and stopped at the very first cage, wondering at the sight of Humans having 2 legs on the ground and 2 legs floating in the air.. ‘Oh God’, shouted a deer, the other went like, ‘They walk!’, to which the other replied, ‘God, oh pity of them, how could they even hop when they are happy!’. And in amusement they were walking past all cages! </p>
+<p>A Male Rhino with a mandatory forced ‘Single’ status with no existing female of its species, was genuinely happy seeing The Human Couple in a cage sharing their thoughts and grief’s and making love! </p>
+<p>When the Leopardess and the cubs were enjoying their visit, the Leopard took his seat in a wooden log near a single Human cage and was just staring at him, thinking ,’Why he is all alone there, out of will or force?!’ and then his cubs and the wife interrupted into his thoughts to give the answer ‘Out of force’! </p>
+<p>A Giraffe bent down her long neck to look into the Humans in close proximity and the instant thought of her was, ‘My neck aches badly bending so much to see you buddies, but still you are worth for a shot!’ and got back to normal stature, grinning and felt sigh as her parents couldn’t make today to witness the Humans!</p>
+<p>Flocks of Camels were serenely enjoying their visit, when one Calf screamed in astonishment, ‘These creatures have got water everywhere around them… look look the one in the left corner cage is having it right in his hand filled in some object!’ The other Camel went like, ‘oh yeah, guys, see to my side of the cage, they get it directly from some kind of an object by just screwing it’. Now time for the nerdy Camel to speak, ‘ I knew it. It is called The Pipe. Water just gushes out of it anytime every time when screwed. The curse of ours turns to be the blessing of them if… if not taken advantage of it!’ as the Camels were listening to their nerdy dude, were still in awe of ‘anytime every time’!</p>
+<p>The Tigers with their Majestic walk, walked past the cages with a pause in front of each cage and murmuring among them, leaving no idea of what would that murmur would have been… but for sure they enjoyed the sight of the Humans in cages, witnessed with the constant proud grin, running through all the faces of The Tiger Dudes.</p>
+<p>The Lion made a roaring entry accompanied by a group of Lioness and cubs, made a gesture to his Tiger pal standing aside and engaged into Human – watching. The Lioness was like, ‘See here, my lil ones, they are called The Humans, okay. They are our <b>‘mere co-existing creatures’</b>, nothing more or less. They get caged when The Mother Nature thinks they deserve it to get things right and to heal Herself. We have been permitted to see them today as a reward for us of not taking anything for granted!’ and the cubs nodded taking their first impactful lesson for lifetime! </p>
+<p><b>…………….AND EMPATHY SOMEWHERE AROUND THE CORNER FOR EACH ANE EVERY ONE OF THE CREATURE SEEING THE HUMANS IN CAGES!!!! </b></p>
+<p>The visiting hours was over and all the species of animals came out of the Human Zoo with a mixed emotions of finally seeing The Humans and questioning among them went like,</p>
+ <p> ‘Don’t they deserve to be free like us? They should be free like us. They will be good. Can we all talk to The Mother Nature on their behalf and give guarantee for them?!’ and they all turned towards The King, who was standing beside his pal The Tiger and they both instantly nodded<b> ‘YES!’. </b></p>
+<p><b>After their pleading, The Mother Nature fulfilled their selfless wish, which only they can do!!</b></p>
+</div>
+<h2 style="color:#000080;" id="C12"><b>It can be your journey of warmth</b></h2>
+<div id="overflowTest" style="color:#006400;border-color:#006400 brown">
+<p id="C12" style="text-align:center"><b>La!Laa!!Laaa!!! Land</b></p>
+<p id="C12">IT CAN BE YOUR JOURNEY OF WARMTH .</p>
+<p>A home amidst the mild forest&#127794;.. </p>
+<p>It was past noon.. </p>
+<p>Trees&#127796; standing straight stalking people.. </p>
+<p>Grasses looking into the ants&#128028; running.. </p>
+<p>Deers&#129420;	just	walking..Elephants&#128024;	sitting
+idle..Peacock&#129434; just roaming..Birds&#128038; on trees as spectators..Monkeys&#128018; plucking fruits&#x1F34A; and eating from trees.. Butterflies&#129419; stuck to ground and plants.. Water in nearby river&#127754; standing still.. </p>
+<p>Seems like a bit lousy day. </p>
+<p>Sensing all this .. An intimate friend of ours wanted deliberately to come and visit us just to cheer ' us ' up ! </p>
+<p>But her schedule to visit us is some weeks later .. so She seeks permission to visit us from Her Highness.. Permission Granted !! </p>
+<p>Now happily She brings with her all her pals and they are on the way to meet us immediately !! </p>
+<p>Here, in our place.. </p>
+<p>We start sensing the symptoms of Her Arrival ! </p>
+<p>Sun&#127748; is waving us a mischievous goodbye for the day.. </p>
+<p>Breezy wind greets us by gentle slaps on our face.. </p>
+<p>Chillness making us thrilled.. </p>
+<p>Peacock&#127752; in the start of opening up his feathers.. </p>
+<p>And yes.. We witness Her storehouse - The Black Clouds towards us.. </p>
+<p>And It all happens in no second which instantly changed all our mood to excitement !! </p>
+<p>A sudden gush of warmth within us.. feeling the breeze in this cool weather makes us get lost in our surrounding ! </p>
+<p>A sudden smile and enthu in all of us ! </p>
+<p>We even forgot that Our Friend is going to make her arrival in some minutes by drowning in the feel good place ! </p>
+<p>And then.. Here comes She.. </p>
+<p>She is always a person who comes calm and then rocks.. </p>
+<p>Everytime.. She gives a suttle entry and then bam !! </p>
+<p>Just like Her.. </p>
+<p>She makes the entry by a Droplet&#128167; !!</p>
+<p>We were all like .. Is She coming ? Is She coming ? Was that She who hit me now !? Did She hit you too ?! ..was the delighted convo between us all !</p><P>When we were all busy in our debate of Yes or No of Her hitting ..</p>
+<p>She delivers the verdict - Drizzling starts&#127782; !!</p><p> A very mild drizzle - Her regular attitude ! </p><p>The drizzle makes Her way..</p>
+<p>Hits the ground</p>
+<p>And makes a hop in happiness</p>
+<p>as she made her way to visit us successfully </p><p>Oh. How awestruck we were witnessing it !!</p>
+<p>And the grasses are the blessed ones to watch it closely .. and yeah we are lil jealous about you Ill grass !!</p>
+<p>Just when we thought .. how good it will be to witness the uniformity of the raindrops in plenty hopping in the ground as she hits ..</p>
+<p>Our friend is no betrayer of ours ..</p>
+<p>Now the Tall trees screams at us to look up..</p>
+<p>Look Up You Lil Happy Creatures' !! </p>
+<p>We look up immediately for the rain to splash on our happy faces !! </p>
+<p>Drizzle to a Really Good Rain .. </p>
+<p>Oh Man ! How Mighty She is - The Rain is ! </p>
+<p>Oh Man ! Look they are dancing on the ground by hoping !! </p>
+<p>Now the lousy us when the sun was staring at us..(No offense Dood (Sun).. We heart you too !!) were like.. </p>
+<p>The branches and the leaves of the trees happily moving and feeling the rain stalking the happy lil Creatures.. Grasses witnessing the hoping and sees the ants running to their hides.. </p>
+<p>Deers hopping around our home and the trees and around us all with full excitement.. Elephants doing funny stuffs with their trump.. and birds with multicolours flying..monkeys happily switching to trees..Peacocks dancing with their feathers open and.. </p>
+<p>....The Blissfull Serene Excited Adventurous Blessed Human Soul amidst them watching The Purity of Nature around with such Warmth and Gratitude and much Respect&#127752;... </p>
+<p>When Butterflies&#129419; were adding colours around all of us !!</p>
+<p>Our friend bid adieu to us after quite a long time promising us to meet us soon..</p>
+<p>She left.. But not the marks she left.. The Happiness and Calmness exists !! Wow.</p>
+<p style="text-align:right">Life is wonderfully amazing.</p>
+<p style="text-align:right">BY A SERENE SOUL !</p>
+</div>
+<h2 id="C13" style="color:#000080;"><b>The Wisdom Room</b></h2>
+<div id="overflowTest" style="color:#006400;border-color:#006400 brown">
+<p id="C13" style="text-align:center"><b>THE WISDOM ROOM</b></p>
+<p>Some thousands and thousands of years back.. </p>
+<p>There was a meeting.. one day.. in the most wise place meaning a high power meeting among the intelligentsia of all the animals. It was about naming of a particular quality they all possessed, but not named yet .. hot debates and discussions all over the room happening. </p>
+<p>*wise discussions* </p> 
+<p>*fruitful debates*</p>
+<p>And finally, they all came to a conclusion to name it .. </p>
+<p>The new name for the amazing quality is – HUMANITY! </p>
+<p>Now, as the world outside was so eager of the naming ceremony happening in THE WISDOM ROOM,  they came out after their finalization and announced it to the world.. The Wisdom Room was the most respected room of the time filled with wisest members ever! </p>
+<p>*Announcement* - HUMANITY it is named to the greatest quality of all time! </p>
+<p>Crowd was happy but still there was murmuring sounds going around among everybody except one section which was excited for the name. The questions rose from the public to the intelligentsia like... Why is this name… Why based on them... Why not us... Why particularly them...  And so many random and thought provoking questions. </p>
+<p>The intelligentsia who chose the name.. was having a witty smirk and their face expression makes it obvious that this is the reaction they were exactly expecting from the crowd. They all had the same look .. A wise smirk.. and left the place with no explanation, as if they will not reveal it ‘WHY’ but TIME WILL! </p>
+<p>How wise and intelligent must have they been!! </p>
+<p>*A gentle reminder – The intelligentsia in the Wisdom room has the representatives from all the breeds of animals!* </p>
+<p>AS they didn’t reveal it, time passed, years passed, the world was rapidly changing .. CHANGED actually from the time of the Wisdom room meeting. The Wisdom room was more of like conspiracy theory and it must been by now be under the grounds or somewhere hidden in mud or water or whatever. </p>
+<p>The ‘ TODAYS WORLD ‘ had no idea about it to be frank. Do you. Nay right! </p>
+<p>But on one usual day, in the woods, as usual the creatures there were busy and idle in their activities. To their surprise, they discovered something strange peeping out from the bushes slightly – a structure. At first they were all like.. How have we not noticed it for so long.. was the immediate thoughts beyond their curiosity. They were like.. set aside the bushes and see what it is!! CURIOSITY!! </p>
+<p>They were into the operation now. To their surprise, it was a cave with a room like inside, meaning it was in use ONCE. They started exploring it. In the entrance of the cave was carved a name – THE WISDOM ROOM! They all became astonished as the stories of The Wisdom room was still going rounds since then but with added flavor as per time to it.  They were like – ‘ oh yay, its true! ‘.</p>
+<p>Okay. THE WISDOM ROOM it is. They went on to see the carved table-like, bench-like, cupboard-like structures. And there was inscriptions all over the wall left undisturbed. Among the inscriptions, there was one highlighted one with border .. and all their heads turned towards it. Little did they knew that… they were getting to get  known to the biggest prediction ever and be proud of their wise ancestors!! </p>
+<p>Highlighted Script went like.. </p>
+<p>*This amazing quality is named after The Human Breed as ‘ HUMANITY ‘. It is not because of the over expressing of them this quality. Nor because of Partiality. Each and Every Breed is equal for us in our place - The World. Everybody of you has the same life. Not because, The Humans have an extra 6th sense, its not that their life is something superior than others. Life is Life, no matter whatever breed you are. But this 6th sense in The Humans, one day, will make them self-boasting, will make them do changes and rule the world as if it belongs only to them. Their belonging.. reducing the life of other breeds to theirs. There will come a day, where this quality which is possessed immensely in them today, will be in negligible amount one day, a stage of almost extinct. When that is happening.. will happen.. atleast the name Humanity which bears their name will make them to hold it in some form, as they should possess it to run the world good. Or else, they will not even notice the Word – and will make it from negligible to Extinct. The Others – Its not that you don’t possess Humanity, you possess it in abundance now and will possess it forever. Just thank the absent 6th sense in you breeds. SO, THIS WISDOM ROOM, NAMES THIS WORDLY QUALITY – HUMANITY, AFTER THE ANIMAL BREED – HUMAN, AS IT WOULD ATLEAST REMIND THEM OF THIS WHEN THEY INSANELY RULE THE WORLD IN THE COMING DAYS..!* </p>
+<p>The creatures now ..i.e. the other animal breeds now.. realizing – WE WERE ALL ONCE LIVING UNDER ONE ROOF .. closed the cave with bushes again and left the divine cave in silence with pride for their still possessed quality in abundance and an anguished smirk  thinking about The Human Breed.</p>
+</div>
+</div>
+
+<h3 style="margin-bottom:0.2em;color:#5073b8;"><span style="color: orange">Respect</span><span style="color: blue"> to</span><span style="color: green">  Mother India</span></h3>
+<div class="c" style="border-color: orange green;">
+<h3 id="C14" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>The Crown of Nation - ISRO on Chandrayan 2</b></h3>
+<div id="overflowTest" style="color:orange;border-color: blue;">
+<p id="C7" style="text-align:center"> <b>TO THE CROWN OF OUR NATION</b></p>
+<p>Oh ISRO, you beauty ! </p>
+<p>You be Our Everlasting Pride ! </p>
+<p>You inspire us everytime with your daring Ride_! No matter what , we will always be your side ! </p>
+<p>We indeed learn from your passionate experts the meaning of Lide ! </p>
+<p>You must be the hater of the word Narrow who always keeps all your footsteps Wide ! </p>
+<p>You never fail from inspiring us to that we atleast wanted to be your Aide ! </p>
+<p>The most loved word of yours must be Jide !
+It's not that inorder to stand with you at this moment our feelings we Hide ! </p>
+<p>Because We knew that we have achieved something nobody has even dared to imagine before and from the takings of this successfull experiment YOU DEFINITELY WILL RAISE LIKE A HUGE TIDE !! </p>
+<p style="text-align:right">With Love and Pride,</p>
+<p style="text-align:right">Children of Mother India</p>
+</div>
+<h3 id="C15" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>A Day to Remember - September 7,2019</b></h3>
+<div id="overflowTest" style="color:orange;border-color: blue;">
+<p>SEPTEMBER 7, 2019</p>
+<p>Indeed</p>
+<p>A Day to Remember</p>
+<p>A Day we and coming generation will look upto A Day in The Proud History of India !! CHANDRAYAAN - The Dream of Billions ! </p>
+<p>In the Wee hours of this day, it was a culmination of emotions, curiosity, pride of the .. days journey of Our Very Own Chandrayaan. </p>
+<p>The Moment it was</p>
+<p>People burning their midnight oil even
+betraying their everlasting love Sleep just for one reason.. </p>
+<p>Some curiosity and pride were dwelling in them in abundance.. </p>
+<p>Their hearts were pounding like never before for just one reason.. </p>
+<p>Their eyes were getting moist seeing the happy progressive scenario..</p>
+<p>Their body was trembling in rejoice to witness the moment.. </p>
+<p>Suddenly There was a silence portraying the intellegensia chaos.. </p>
+<p>* Signal Loss *</p>
+<p>At that moment.. We were shattered like never before ..</p>
+<p>Then slowly realising moments.</p>
+Indeed WE MADE HISTORY !!</p>
+<p>We achieved something nobody has even dared attempt !</p>
+<p>Science is about experiment. So let's learn hard from this most successful experiment and give a sure shot the next time !</p>
+</div>
+<h3 id="C16" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>.....Mother India.....</b></h3>
+<div id="overflowTest" style="color:orange;border-color: blue;">
+<p>I dont know..</p>
+<p>I dont know how</p>
+<p>I dont know how people vacate from their own place</p>
+<p>I dont know how people voluntarily go for subjugation</p>
+<p>I dont know how people willfully tend to lose their identity</p>
+<p>I dont know how people easily forget their birth place</p>
+<p>I dont know how people easily adopt to new life without regret</p>
+<p>I dont know how people get the identity of the new place with full heart</p>
+<p>I dont know how people become economic - minded</p>
+<p>I dont know how people can even think about it</p>
+<p></p>
+<p>To the lots & lots of unanswered questions waving in my mind..</p>
+<p></p>
+<p>I am being myself in my place</p>
+<p>I can do whatever I want with whole heart</p>
+<p>I live in reality than in video calls daily</p>
+<p>I go with my place whenever I wanted</p>
+<p>I see people not places</p>
+<p>I see homes not houses</p>
+<p>I see natural peace not cultivated peace</p>
+<p>I see happiness all round not searching for it </p>
+<p>I see the oneness not loneness</p>
+<p>I see the feeling of belongingness</p>
+<p>Yes.</p>
+<p>I belong here , forever.</p>
+<p style="text-align:right">-By a true daughter of mother India</p>
+</div>
+</div>
+<h3 style="margin-bottom:0.2em;color:#a166ab;">Give It a Shot!</h3>
+<div class="c" style="border-color: #e52e71 #6fba82 #1098ad coral;">
+<h3 id="C17" style="color:blue;animation: glow 2s ease-in-out infinite alternate;"><b>Virtual Habits in Human Lockdown-Pandemic Teaches</b></h3>
+<div id="overflowTest" style="color:#a166ab;border-color: pink;">
+<p>This unprecedented<b> LOCKDOWN</b> has <b>UNLOCKED</b> a brand new US!</p>
+<p><b>When we were all busy chasing something in this chaotic world, there came a PAUSE…</b></p>
+<p>To think what we are all actually searching for, losing the real us in this journey, when money can’t save lives at this moment…</p>
+<p>To realize life is worth more than what we thought of, only when fear strikes us in the form of a micro-organism… </p>
+<p>To celebrate the people around us each day with love, as we experience life is uncertain…</p>
+<p>To remember and thank people each day, who are rendering their selfless services at this time to the Human kind, even putting themselves at risk…</p>
+<p>To mourn for the damage we have done to The Mother Nature seeing the happy pictures of Her healing Herself, which we always took for granted but never again…</p>
+<p>To thank this lockdown for making us remember that we have two words, ‘H’&’E’, in our dictionary as  a solution for everything, which will otherwise become extinct, the words! </p>
+ <p>                       ‘<b>H</b>UMANITY’ to sustain The World! </p>
+  <p>                      ‘<b>E</b>MPATHY’ to sustain The Living Creatures!! </p>
+<p>Though these are not the physical habits, we should take this LOCKDOWN lesson soulfully and make all these VALUBALE (VIRTUAL) HABITS to be part of us, in The New World we are going to step into. <p>
+<p>WE WILL!!</p>
+</div>
+</div>
+<div style="border-style: solid;border-top-color: #bbb;background:#262626;">
+<h2  style="text-align:center;margin-bottom:-.5em;">Connect on social media</h2>
+<ul style="list-style:none;display:flex;text-align:center;margin-bottom:-2em;">
+<li style="padding:8px 8px;"><a href="https://www.instagram.com/kiruthiga711" target="_blank"><i class="fa fa-instagram"  style="font-size:30px;color:white;"></i></a></li>
+<li style="padding:8px 8px;"><a href="https://twitter.com/kiruthi711" target="_blank"><i class="fa fa-twitter" style="font-size:30px;color:white;"></i></a></li>
+<li style="padding:8px 8px;"><a href="https://www.facebook.com/kiruthiga.shanmugam.5" target="_blank"><i class="fa fa-facebook" style="font-size:30px;color:white;"></i></a></li>
+</ul>
+
+<h2 class="neon" style="padding:6px;margin-bottom:-1em;">Kiruthiga <span class="flux"> Shanmugam</span></h2>
+<h4 style="padding:6px;color:white;margin-bottom:-1em">-Life is an Adventure Explore it&#128420!!!</h4>
+<h1 style="text-align:center;font-size:20px;font-weight: bold">© #Kiruthi711</h1>
+</div>
+
 
 <script>
 function myFunction(p) {

@@ -1,6 +1,7 @@
 
 
 
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
@@ -10,6 +11,15 @@
 <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+.body1{
+  background-color: #141114;
+  background-image: linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px),
+    linear-gradient(335deg, black 23px, transparent 23px),
+    linear-gradient(155deg, black 23px, transparent 23px);
+  background-size: 58px 58px;
+  background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+  }
 #example1 {
   border: 2px solid red;
   padding: 10px;
@@ -44,7 +54,7 @@ div.c {
   
  
 } 
-#overflowTest {
+.overflowTest {
 font-family:calibri;
 font-size:20px;
 background: white;
@@ -131,23 +141,43 @@ display: flex;
 position: absolute;
 background-color: #262626;
 }
-
 </style>
-<body style="background-color:white;">
+<script> 
+function changeClass() {
+var i,d;
+document.getElementById('myButton').className = "body1";
+var elements = document.getElementsByClassName('overflowTest');
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style.backgroundColor = "black";
+	}
+}
+
+function changeClass1() { 
+document.getElementById('myButton').className = "body"; 
+var i,d;
+var elements = document.getElementsByClassName('overflowTest');
+	for(var i = 0; i < elements.length; i++){
+		elements[i].style.backgroundColor = "white";
+	}
+
+} 
+</script> 
+</head>
+<body id="myButton" class="default">
 
 <h1  id="example1" style="border:2px solid white;font-size:300%;text-align:center;color:red;font-family: cursive;text-shadow: 2px 2px 5px red;">Kiruthi's Insight</h1>
 <div id="main" style="margin-bottom:-1.0em">
   <button onclick="myFunction(0)"><div class="venkat"  style="background-color:coral;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Authors View</div></button>
   <button onclick="myFunction(1)"><div class="venkat"  style="background-color:lightblue;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Happy Crappy</div></button>
-  <button onclick="myFunction(2)"><div class="venkat"  style="background-color:khaki;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Connect On</div></button>
+  <a href="#C30"><button onclick="myFunction(2)"><div class="venkat"  style="background-color:khaki;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Connect On</div></button></a>
   <button  onclick="myFunction(3)"><div class="venkat"  style="background-color:pink;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">info</div></button>
-  <button onclick="myFunction(4)"><div class="venkat"  style="background-color:lightgrey;border: 1px solid #c3c3c3;padding: 5px;font-size:10px;float:right;">Upcoming</div></button>
+  <button onclick="myFunction(4)"><div class="venkat"  style="background-color:lightgrey;border: 1px solid #c3c3c3;padding: 5px;font-size:10px;float:right;">Dark Theme</div></button>
 </div>
-<p class="demo" style="display: none;background-color:coral;width:57%">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:lightblue;width:57%">Hi I  kirutthi</p>
-<p class="demo" style="display: none;background-color:khaki;width:57%">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:pink;width:57%">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:lightgrey;width:57%">Hi I am kirutthi</p>
+<p class="demo" style="display: none;background-color:coral;width:auto">Hi I am kirutthi</p>
+<p class="demo" style="display: none;background-color:lightblue;width:auto">Hi I  kirutthi</p>
+<p class="demo" style="display: none;background-color:khaki;width:auto">Hi I am kirutthi</p>
+<p class="demo" style="display: none;background-color:pink;width:auto">Hi I am kirutthi</p>
+<p class="demo" style="display: none;background-color:lightgrey;width:auto">Switch To <button  onclick="changeClass()"> Dark Mode</button><button  onclick="changeClass1()">Day mode</button></p>
 
 <div class="card">
 <p style="background-color:white;color:#1098ad;border-bottom: 1px solid blue;padding: 5px;font-size:20px;width:235px">CHOOSE YOUR CATCHY!</p>
@@ -198,7 +228,7 @@ background-color: #262626;
 <h4 style="margin-bottom:0.2em;color:#5073b8;">GET OUT OF THE BOX!</h4>
 <div class="c">
 <h3 id="C1" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>The so called Maturity!</b></h3>
-<div id="overflowTest">
+<div class="overflowTest">
 <p id="C1" style="text-align:center"> <b>THE MATURITY!</b></p>
 <p>Hey Hi.</p>
 <p>My company is mandatory for you. Still I don't have a specific definition. But I have a name..</p>
@@ -228,7 +258,7 @@ background-color: #262626;
 </div> 
 <p></p>
 <h2 style="color:coral;" id="C2"><b> Scared - "Yes, I am!"  </b></h2>
-<div id="overflowTest">
+<div class="overflowTest">
 <p id="C2" style="text-align:center"> <b>SCARED</b></p>
 <p><b>Hi You..</b></p>
 <p>I am scared!</p>
@@ -263,7 +293,7 @@ background-color: #262626;
 </div>
 <p></p>
 <h2 id="C3" style="color:coral;"><b> The Breast - Hey Gazers!! </b></h2>
-<div id="overflowTest">
+<div class="overflowTest">
 
 <p id="C3" style="text-align:center"> <b>THE BREAST!</b></p>
 <p><b>What If The Breast Speaks…</b></p>
@@ -288,7 +318,7 @@ background-color: #262626;
 <p style="text-align:right"><b>BY THE VICTIM MYSELF - THE BREAST!</b></p>
 </div>
 <h3  id="C4" style="color:coral;"><b>The STEREOTYPES!- Girl of Attitude(EGO)!</b></h3>
-<div id="overflowTest">
+<div class="overflowTest">
 <p id="C4" style="text-align:center">THE STEREOTYPES!</b></p>
 <p>Am I girl of Attitude, just because I do what I like..</p>
 <p>Am I a girl of less a character, just because I treat my both gender friends equally..</p>
@@ -309,7 +339,7 @@ background-color: #262626;
 <p style="text-align:right">A Girl Of Ego.</p>
 </div>
 <h2 style="color:coral;" id="C5"><b>Amidst! - PerspectiveMatters</b></h2>
-<div id="overflowTest">
+<div class="overflowTest">
 <p id="C5" style="text-align:center;font-family:lucida handwriting"> <b>Amidst</b></p>
 <p style="font-family:lucida handwriting">Light amidst dark </p>
 <p style="font-family:lucida handwriting">Possible amidst impossible</p>
@@ -320,7 +350,7 @@ background-color: #262626;
 <p style="text-align:right;font-family:lucida handwriting;text-shadow: 5px 5px 5px white">#PerspectiveMatters</p>
 </div>
 <h2  id="C6" style="color:coral;"><b>The Magical Yellow Rope - Is it needed?</b></h2>
-<div id="overflowTest">
+<div class="overflowTest">
 
 <p id="C6" style="text-align:center"><b>The Magical Yellow Rope</b></p>
 <p>The Magical Rope !!</p>
@@ -348,7 +378,7 @@ The Rope and it's transformations ! </p>
 <p style="text-align:right;font-family:lucida handwriting;">Kiruthi!</p>
 </div>
 <h2 style="color:coral;" id="C7"><b>Be The Change - Dont Always Wish</b></h2>
-<div id="overflowTest">
+<div class="overflowTest">
 <p id="C7" style="text-align:center;font-family:satisfy"> <b>Be The Change</b></p>
 <p style="font-family:satisfy">Dont always wish for a change </p>
 <p style="font-family:satisfy">Instead be the change</p>
@@ -375,7 +405,7 @@ The Rope and it's transformations ! </p>
 <p style="text-align:right;font-family:satisfy;">Kiruthiga Shanmugam</p>
 </div>
 <h2  id="C8" style="color:coral;"><b>Yes, I bleed! - Not a Taboo?</b></h2>
-<div id="overflowTest">
+<div class="overflowTest">
 <p id="C8" style="text-align:center"><b>Yes, I bleed!</b></p>
 <p>I BLEED !</p> <p> </p>
 <p>Yes, I Bleed !!</p><p>Just because I Bleed, it doesn't make me Impure ! </p><p>Just because I Bleed, it's not that I am physically weak !</p><p>Just because I Bleed, I don't deserve any sympathy !</p><p>Just because I Bleed, I can't be isolated from Holy places !</p><p>Just because I Bleed, people can't get awkward talking about it !</p><p>Just because I Bleed, Should I keep this Divinity bestowed on me as a secret ??!?????!!</p><p></p>
@@ -385,7 +415,7 @@ The Rope and it's transformations ! </p>
 <p style="text-align:right;">BY A PROUD BLEEDING WOMEN !</p>
 </div>
 <h2 id="c9" style="color:coral;"><b>Happy Girl in The World of Purity</b></h2>
-<div id="overflowTest">
+<div class="overflowTest">
 
 <p id="C9" style="text-align:center;font-family:satisfy"> <b>Happy Girl in The World of Purity</b></p>
 <p> A HAPPY GIRL!!</p>
@@ -416,8 +446,8 @@ The Rope and it's transformations ! </p>
 
 <h4 style="margin-bottom:0.2em;color:#6fba82;">LA..LA..LAND!!</h4>
 <div class="c" style="border-color:brown;">
-<h2 id="C10" style="color:#000080;"><b>A passionate visit to the mighty jungle</b></h2>
-<div id="overflowTest" style="color:#006400;border-color:brown #006400">
+<h2 id="C10" style="color:#4db1bc;"><b>A passionate visit to the mighty jungle</b></h2>
+<div class="overflowTest" style="color:#006400;border-color:brown #006400">
 <p id="C10" style="text-align:center;font-family:satisfy"> <b>A Hypothetical Day</b></p>
 A HYPOTHETICAL DAY!
 <p>I badly wanted to meet our brothers and sisters of our very own Animal Kingdom. So I addressed my request to The Kingdom, which to my surprise was accepted widely by everybody and assent was given by The King for my visit!That was not just a visit for me, instead was the happening dream of mine.</p>
@@ -462,8 +492,8 @@ A HYPOTHETICAL DAY!
 <p style="text-align:right;">Kiruthiga Shanmugam</p>
 <p style="text-align:right;">Be You!</p>
 </div>
-<h2 id="C11" style="color:#000080;"><b>Caged Humans</b></h2>
-<div id="overflowTest" style="color:#006400;border-color:#006400 brown">
+<h2 id="C11" style="color:#4db1bc;"><b>Caged Humans</b></h2>
+<div class="overflowTest" style="color:#006400;border-color:#006400 brown">
 <p id="C11" style="text-align:center"><b>Caged Humans</b></p>
 <p>Words were spreading in The Woods about The Caged Humans. And all the species got curious to know ‘Why?’ and ‘How?. They desperately wanted to go visit them. Steps were taken from their side regarding this. Request to visit The Caged Humans was submitted to Highness.</i></p>
 <p>Orders were issued to all the brothers and sisters of Animal Kingdom, giving permission for their visit to The Caged Humans!</p>
@@ -487,8 +517,8 @@ A HYPOTHETICAL DAY!
  <p> ‘Don’t they deserve to be free like us? They should be free like us. They will be good. Can we all talk to The Mother Nature on their behalf and give guarantee for them?!’ and they all turned towards The King, who was standing beside his pal The Tiger and they both instantly nodded<b> ‘YES!’. </b></p>
 <p><b>After their pleading, The Mother Nature fulfilled their selfless wish, which only they can do!!</b></p>
 </div>
-<h2 style="color:#000080;" id="C12"><b>It can be your journey of warmth</b></h2>
-<div id="overflowTest" style="color:#006400;border-color:#006400 brown">
+<h2 style="color:#4db1bc;" id="C12"><b>It can be your journey of warmth</b></h2>
+<div class="overflowTest" style="color:#006400;border-color:#006400 brown">
 <p id="C12" style="text-align:center"><b>La!Laa!!Laaa!!! Land</b></p>
 <p id="C12">IT CAN BE YOUR JOURNEY OF WARMTH .</p>
 <p>A home amidst the mild forest&#127794;.. </p>
@@ -541,8 +571,8 @@ idle..Peacock&#129434; just roaming..Birds&#128038; on trees as spectators..Monk
 <p style="text-align:right">Life is wonderfully amazing.</p>
 <p style="text-align:right">BY A SERENE SOUL !</p>
 </div>
-<h2 id="C13" style="color:#000080;"><b>The Wisdom Room</b></h2>
-<div id="overflowTest" style="color:#006400;border-color:#006400 brown">
+<h2 id="C13" style="color:#4db1bc;;"><b>The Wisdom Room</b></h2>
+<div class="overflowTest" style="color:#006400;border-color:#006400 brown">
 <p id="C13" style="text-align:center"><b>THE WISDOM ROOM</b></p>
 <p>Some thousands and thousands of years back.. </p>
 <p>There was a meeting.. one day.. in the most wise place meaning a high power meeting among the intelligentsia of all the animals. It was about naming of a particular quality they all possessed, but not named yet .. hot debates and discussions all over the room happening. </p>
@@ -569,9 +599,9 @@ idle..Peacock&#129434; just roaming..Birds&#128038; on trees as spectators..Monk
 
 <h3 style="margin-bottom:0.2em;color:#5073b8;"><span style="color: orange">Respect</span><span style="color: blue"> to</span><span style="color: green">  Mother India</span></h3>
 <div class="c" style="border-color: orange green;">
-<h3 id="C14" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>The Crown of Nation - ISRO on Chandrayan 2</b></h3>
-<div id="overflowTest" style="color:orange;border-color: blue;">
-<p id="C7" style="text-align:center"> <b>TO THE CROWN OF OUR NATION</b></p>
+<h3 class="C14" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>The Crown of Nation - ISRO on Chandrayan 2</b></h3>
+<div class="overflowTest" style="color:orange;border-color: blue;">
+<p id="C14" style="text-align:center"> <b>TO THE CROWN OF OUR NATION</b></p>
 <p>Oh ISRO, you beauty ! </p>
 <p>You be Our Everlasting Pride ! </p>
 <p>You inspire us everytime with your daring Ride_! No matter what , we will always be your side ! </p>
@@ -585,7 +615,7 @@ It's not that inorder to stand with you at this moment our feelings we Hide ! </
 <p style="text-align:right">Children of Mother India</p>
 </div>
 <h3 id="C15" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>A Day to Remember - September 7,2019</b></h3>
-<div id="overflowTest" style="color:orange;border-color: blue;">
+<div class="overflowTest" style="color:orange;border-color: blue;">
 <p>SEPTEMBER 7, 2019</p>
 <p>Indeed</p>
 <p>A Day to Remember</p>
@@ -607,7 +637,7 @@ Indeed WE MADE HISTORY !!</p>
 <p>Science is about experiment. So let's learn hard from this most successful experiment and give a sure shot the next time !</p>
 </div>
 <h3 id="C16" style="color:coral;animation: glow 2s ease-in-out infinite alternate;"><b>.....Mother India.....</b></h3>
-<div id="overflowTest" style="color:orange;border-color: blue;">
+<div class="overflowTest" style="color:orange;border-color: blue;">
 <p>I dont know..</p>
 <p>I dont know how</p>
 <p>I dont know how people vacate from their own place</p>
@@ -638,8 +668,8 @@ Indeed WE MADE HISTORY !!</p>
 </div>
 <h3 style="margin-bottom:0.2em;color:#a166ab;">Give It a Shot!</h3>
 <div class="c" style="border-color: #e52e71 #6fba82 #1098ad coral;">
-<h3 id="C17" style="color:blue;animation: glow 2s ease-in-out infinite alternate;"><b>Virtual Habits in Human Lockdown-Pandemic Teaches</b></h3>
-<div id="overflowTest" style="color:#a166ab;border-color: pink;">
+<h3 id="C17" style="color:brown;animation: glow 2s ease-in-out infinite alternate;"><b>Virtual Habits in Human Lockdown-Pandemic Teaches</b></h3>
+<div class="overflowTest" style="color:#a166ab;border-color: pink;">
 <p>This unprecedented<b> LOCKDOWN</b> has <b>UNLOCKED</b> a brand new US!</p>
 <p><b>When we were all busy chasing something in this chaotic world, there came a PAUSE…</b></p>
 <p>To think what we are all actually searching for, losing the real us in this journey, when money can’t save lives at this moment…</p>
@@ -654,7 +684,7 @@ Indeed WE MADE HISTORY !!</p>
 <p>WE WILL!!</p>
 </div>
 </div>
-<div style="border-style: solid;border-top-color: #bbb;background:#262626;">
+<div id="C30" style="border-style: solid;border-top-color: #bbb;background:#262626;">
 <h2  style="text-align:center;margin-bottom:-.5em;">Connect on social media</h2>
 <ul style="list-style:none;display:flex;text-align:center;margin-bottom:-2em;">
 <li style="padding:8px 8px;"><a href="https://www.instagram.com/kiruthiga711" target="_blank"><i class="fa fa-instagram"  style="font-size:30px;color:white;"></i></a></li>
@@ -671,7 +701,6 @@ Indeed WE MADE HISTORY !!</p>
 <script>
 function myFunction(p) {
   var x,i,y,z;
-  
   y = document.getElementsByClassName("venkat");
   x = document.getElementsByClassName("demo");
   for (i = 0; i < x.length; i++) {

@@ -2,6 +2,8 @@
 
 
 
+
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
@@ -141,6 +143,71 @@ display: flex;
 position: absolute;
 background-color: #262626;
 }
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+ 
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: brown;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 1px 0 0 1px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+/* Caption text */
+.text {
+  color: brown;
+  font-size: 17px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
 </style>
 <script> 
 function changeClass() {
@@ -169,9 +236,9 @@ var elements = document.getElementsByClassName('overflowTest');
 <div id="main" style="margin-bottom:-1.0em">
   <button onclick="myFunction(0)"><div class="venkat"  style="background-color:coral;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Authors View</div></button>
   <button onclick="myFunction(1)"><div class="venkat"  style="background-color:lightblue;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Happy Crappy</div></button>
-  <a href="#C30"><button onclick="myFunction(2)"><div class="venkat"  style="background-color:khaki;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Connect On</div></button></a>
+  <button onclick="myFunction(2)"><div class="venkat"  style="background-color:khaki;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Connect On</div></button>
   <button  onclick="myFunction(3)"><div class="venkat"  style="background-color:pink;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">info</div></button>
-  <button onclick="myFunction(4)"><div class="venkat"  style="background-color:lightgrey;border: 1px solid #c3c3c3;padding: 5px;font-size:10px;float:right;">Dark Theme</div></button>
+  <button onclick="myFunction(4)"><div class="venkat"  style="background-color:lightgrey;border: 1px solid #c3c3c3;padding: 5px;font-size:10px;float:right;">Upcoming</div></button>
 </div>
 <p class="demo" style="display: none;background-color:coral;width:auto">Hi I am kirutthi</p>
 <p class="demo" style="display: none;background-color:lightblue;width:auto">Hi I  kirutthi</p>
@@ -181,8 +248,8 @@ var elements = document.getElementsByClassName('overflowTest');
 
 <div class="card">
 <p style="background-color:white;color:#1098ad;border-bottom: 1px solid blue;padding: 5px;font-size:20px;width:235px">CHOOSE YOUR CATCHY!</p>
-<button onclick="myFunction(5)" style="padding:2px"><div style="background-color:#5073b8;border: 1px solid #c3c3c3;padding: 5px;font-size:14px;width:194px;">GET OUT OF THE BOX!</div></button>
-<button onclick="myFunction(6)" style="padding:2px;margin-bottom:-1em;position:absolute;left:230px;"><div style="background-color:#6fba82;border: 1px solid #c3c3c3;padding: 5px;font-size:14px;width:110px;">LA..LA..LAND!!</div></button>
+<button onclick="myFunction(5)" style="padding:2px"><div style="background-color:#5073b8;border: 1px solid #c3c3c3;padding: 1px;font-size:13px;width:194px;">GET OUT OF THE BOX!</div></button>
+<button onclick="myFunction(6)" style="padding:2px;margin-bottom:-1em;position:absolute;left:225px;"><div style="background-color:#6fba82;border: 1px solid #c3c3c3;padding: 2px;font-size:13px;width:110px;">LA..LA..LAND!!</div></button>
 <div class="demo" style="border-radius:10px;display: none;background-color:#5073b8;width:auto;padding:3px;">
 <ul style="list-style-type:none;">
 	<li><a href="#C1"><button class="btn" style="margin-bottom:0.4em;font-size:16px;">Maturity</button></a></li>
@@ -207,8 +274,8 @@ var elements = document.getElementsByClassName('overflowTest');
 </div>
 
 <p></p>
-<button onclick="myFunction(7)" style="padding:2px;"><div style=" background-image: linear-gradient(to right, orange , white , green);border: 1px solid #c3c3c3;padding: 2px;font-size:13px;width:200px">RESPECT TO MOTHER INDIA!</div></button>
-<button onclick="myFunction(8)" style="padding:2px;position:absolute;left:230px;"><div style="background-color:#a166ab;border: 1px solid #c3c3c3;padding: 2px;font-size:13px;width:110px;">GIVE IT A SHOT!</div></button>
+<button onclick="myFunction(7)" style="padding:2px;"><div style=" background-image: linear-gradient(to right, orange , white , green);border: 1px solid #c3c3c3;padding: 1px;font-size:13px;width:200px">RESPECT TO MOTHER INDIA!</div></button>
+<button onclick="myFunction(8)" style="padding:2px;position:absolute;left:225px;"><div style="background-color:#a166ab;border: 1px solid #c3c3c3;padding: 1px;font-size:13px;width:110px;">GIVE IT A SHOT!</div></button>
 
 <div class="demo" style="border-radius:10px;display: none;background-image:linear-gradient(to right, orange , white , green);width:auto;padding:3px;">
 <ul style="list-style-type:none;">
@@ -684,7 +751,47 @@ Indeed WE MADE HISTORY !!</p>
 <p>WE WILL!!</p>
 </div>
 </div>
-<div id="C30" style="border-style: solid;border-top-color: #bbb;background:#262626;">
+
+<p></p>
+<h1 style="border:2px solid white;background:pink;font-size:300%;text-align:center;color:black;font-family: cursive;margin-bottom:-0.3em">Happy Crappyy</h1>
+<p style="text-align:right">- Instagram Page<a href="https://www.instagram.com/happycrappyy" target="_blank"><i class="fa fa-instagram"  style="font-size:30px;color:pink;"></i></a></p>
+<p><b>HappyCrappy</b></p>
+<p>Illustration|Penning|what if we jam it together,</p>
+<p>thought us - THE TWO MESSY SISTERS!</p>
+<p>Photography|Scribbles|Bookstop|</p>
+<p>Anything & Everything</p>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="george.png">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="olive.png">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides">
+  <div class="numbertext">3 / 3</div>
+  <img src="elephant.png">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div style="border-style: solid;border-top-color: #bbb;background:#262626;">
 <h2  style="text-align:center;margin-bottom:-.5em;">Connect on social media</h2>
 <ul style="list-style:none;display:flex;text-align:center;margin-bottom:-2em;">
 <li style="padding:8px 8px;"><a href="https://www.instagram.com/kiruthiga711" target="_blank"><i class="fa fa-instagram"  style="font-size:30px;color:white;"></i></a></li>
@@ -699,6 +806,32 @@ Indeed WE MADE HISTORY !!</p>
 
 
 <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 function myFunction(p) {
   var x,i,y,z;
   y = document.getElementsByClassName("venkat");

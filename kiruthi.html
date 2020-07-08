@@ -3,6 +3,7 @@
 
 
 
+
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html>
@@ -181,11 +182,9 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: brown;
-  font-size: 17px;
+  color: coral;
+  font-size: 18px;
   padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
   width: 100%;
   text-align: center;
 }
@@ -206,6 +205,12 @@ img {vertical-align: middle;}
 
 .active, .dot:hover {
   background-color: #717171;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 </style>
 <script> 
@@ -234,16 +239,16 @@ var elements = document.getElementsByClassName('overflowTest');
 <h1  id="example1" style="border:2px solid white;font-size:300%;text-align:center;color:red;font-family: cursive;text-shadow: 2px 2px 5px red;">Kiruthi's Insight</h1>
 <div id="main" style="margin-bottom:-1.0em">
   <button onclick="myFunction(0)"><div class="venkat"  style="background-color:coral;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Authors View</div></button>
-  <a href="#C40"><button onclick="myFunction(1)"><div class="venkat"  style="background-color:lightblue;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Happy Crappy</div></button></a>
+  <a href="#C40"><button onclick="myFunction(1)"><div class="venkat"  style="background-color:pink;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Happy Crappy</div></button></a>
   <a href="#C30"><button onclick="myFunction(2)"><div class="venkat"  style="background-color:khaki;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">Connect On</div></button></a>
-  <button  onclick="myFunction(3)"><div class="venkat"  style="background-color:pink;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">info</div></button>
-  <button onclick="myFunction(4)"><div class="venkat"  style="background-color:lightgrey;border: 1px solid #c3c3c3;padding: 5px;font-size:10px;float:right;">Upcoming</div></button>
+  <button  onclick="myFunction(3)" style="display:none;"><div class="venkat"  style="background-color:pink;border: 1px solid #c3c3c3;padding: 5px;font-size:10px">info</div></button>
+  <button onclick="myFunction(4)"><div class="venkat"  style="background-color:lightgrey;border: 1px solid #c3c3c3;padding: 5px;font-size:10px;float:right;">Dark Mode</div></button>
 </div>
 <p class="demo" style="display: none;background-color:coral;width:auto">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:lightblue;width:auto">Hi I  kirutthi</p>
-<p class="demo" style="display: none;background-color:khaki;width:auto">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:pink;width:auto">Hi I am kirutthi</p>
-<p class="demo" style="display: none;background-color:lightgrey;width:auto">Switch To <button  onclick="changeClass()"> Dark Mode</button><button  onclick="changeClass1()">Day mode</button></p>
+<p class="demo" style="display: none;background-color:lightblue;width:auto"></p>
+<p class="demo" style="display: none;background-color:khaki;width:auto"></p>
+<p class="demo" style="display: none;background-color:pink;width:auto"></p>
+<p class="demo" style="display: none;background-color:lightgrey;width:auto;padding:16px;">Switch To  <button  onclick="changeClass()">  Dark Mode</button> <button  onclick="changeClass1()">Day mode</button></p>
 
 <div class="card">
 <p style="background-color:white;color:#1098ad;border-bottom: 1px solid blue;padding: 5px;font-size:20px;width:235px">CHOOSE YOUR CATCHY!</p>
@@ -752,10 +757,10 @@ Indeed WE MADE HISTORY !!</p>
 </div>
 
 <p></p>
-<h1 style="border:2px solid white;background:pink;font-size:300%;text-align:center;color:black;font-family: cursive;margin-bottom:-0.3em">Happy Crappyy</h1>
+<h1 id="C40" style="border:2px solid white;background:pink;font-size:300%;text-align:center;color:black;font-family: cursive;margin-bottom:-0.3em;padding:16px;">Happy Crappyy</h1>
 <p style="text-align:right;color:green;">- Instagram Page<a href="https://www.instagram.com/happycrappyy" target="_blank"><i class="fa fa-instagram"  style="font-size:30px;color:pink;"></i></a></p>
 <div style="color:#4db1bc;"> 
-<p id="C40"><b>HappyCrappy</b></p>
+<p><b>HappyCrappy</b></p>
 <p>Illustration|Penning|what if we jam it together,</p>
 <p>thought us - THE TWO MESSY SISTERS!</p>
 <p>Photography|Scribbles|Bookstop|</p>
@@ -766,43 +771,43 @@ Indeed WE MADE HISTORY !!</p>
 <div class="mySlides fade">
   <div class="numbertext">1 / 7</div>
   <img src="george.png">
-  <div class="text">Must Visit and Read Caption</div>
+  <a href="https://www.instagram.com/p/CBJTALfBiWk/" target="_blank"><div class="text"><button style="color:coral;font-size:20px;border-radius:8px;">Must Read the Caption @Happy Crappyy</button></div></a>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">2 / 7</div>
-  <img src="olive.png">
-  <div class="text">Olive's!</div>
+  <img style="text-align:center" src="olive.png">
+  <a href="https://www.instagram.com/p/CA7ln_VnJPu/" target="_blank"><div class="text"><button style="color:coral;font-size:20px;border-radius:8px;">Olive's!</button></div></a>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">3 / 7</div>
   <img src="elephant.png">
-  <div class="text">Baby Elephant</div>
+  <a href="https://www.instagram.com/p/CA-uiUanwH8/" target="_blank"><div class="text"><button style="color:coral;font-size:20px;border-radius:8px;">Thoughts</button></div></a>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">4 / 7</div>
   <img src="sleep.png">
-  <div class="text">Sleep!!!</div>
+  <a href="https://www.instagram.com/p/CA9xEH-HtM6/" target="_blank"><div class="text"><button style="color:coral;font-size:20px;border-radius:8px;">Sleep!!!</button></div></a>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">5 / 7</div>
   <img src="sister.jpg">
-  <div class="text">Scribbles(Scrap)</div>
+  <a href="https://www.instagram.com/p/CA08SqLHXeX/" target="_blank"><div class="text"><button style="color:coral;font-size:20px;border-radius:8px;">Scribbles</button></div></a>
 </div>
 
 <div class="mySlides fade">
   <div class="numbertext">6 / 7</div>
   <img src="latitude.jpg">
-  <div class="text">Books</div>
+  <a href="https://www.instagram.com/p/CA5wXpGnZav/" target="_blank"><div class="text"><button style="color:coral;font-size:20px;border-radius:8px;">Bookstop</button></div></a>
 </div>
 
 <div class="mySlides">
   <div class="numbertext">7 / 7</div>
   <img src="happy.png">
-  <div class="text">For All Posts</div>
+  <a href="https://www.instagram.com/happycrappyy" target="_blank"><div class="text"><button style="color:coral;font-size:20px;border-radius:8px;">Anything and Eveything @Happy Crappyy</button></div></a>
 </div>
 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -820,8 +825,9 @@ Indeed WE MADE HISTORY !!</p>
   <span class="dot" onclick="currentSlide(6)"></span>
   <span class="dot" onclick="currentSlide(7)"></span>
 </div>
+<p></p>
 <div id="C30" style="border-style: solid;border-top-color: #bbb;background:#262626;">
-<h2  style="text-align:center;margin-bottom:-.5em;">Connect on social media</h2>
+<h2  style="margin-bottom:-.5em;">Connect on social media</h2>
 <ul style="list-style:none;display:flex;text-align:center;margin-bottom:-2em;">
 <li style="padding:8px 8px;"><a href="https://www.instagram.com/kiruthiga711" target="_blank"><i class="fa fa-instagram"  style="font-size:30px;color:white;"></i></a></li>
 <li style="padding:8px 8px;"><a href="https://twitter.com/kiruthi711" target="_blank"><i class="fa fa-twitter" style="font-size:30px;color:white;"></i></a></li>
